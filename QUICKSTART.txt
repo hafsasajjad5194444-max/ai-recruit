@@ -1,0 +1,109 @@
+/* Quick Start Guide - READ ME FIRST! */
+
+/**
+ * AI-DRIVEN RESUME SHORTLISTING SYSTEM
+ * ====================================
+ * 
+ * GETTING STARTED:
+ * ---------------
+ * 1. Open index.html in your web browser to view the homepage
+ * 2. Click "Upload Resume" to test the resume upload functionality
+ * 3. Browse jobs, use filters, and bookmark your favorites
+ * 
+ * 
+ * ADDING YOUR MEDIA FILES:
+ * -----------------------
+ * 
+ * IMAGES:
+ * - Place images in the /images/ folder
+ * - Update src attributes in HTML files
+ * - Example: <img src="images/logo.png" alt="Logo">
+ * 
+ * VIDEOS:
+ * - Option 1: Place videos in /videos/ folder and update src
+ * - Option 2: Use the current online videos (already working!)
+ * - Current videos load from Coverr.co CDN automatically
+ * 
+ * AUDIO:
+ * - Add background-music.mp3 to /audio/ folder
+ * - Audio is optional and controlled by the speaker icon
+ * 
+ * 
+ * CUSTOMIZATION:
+ * -------------
+ * 
+ * Change Colors:
+ * - Edit css/styles.css (look for :root variables at the top)
+ * 
+ * Add Jobs:
+ * - Edit js/jobs-data.js
+ * - Add new job objects to the jobsData array
+ * 
+ * Change Company Name:
+ * - Find "AIRecruit" in HTML files and replace
+ * - Update footer copyright text
+ * 
+ * 
+ * CURRENT FEATURES:
+ * ----------------
+ * ✅ 30+ pre-loaded job listings
+ * ✅ Advanced job filtering
+ * ✅ Drag-and-drop resume upload
+ * ✅ Video backgrounds (loading from online)
+ * ✅ Smooth animations
+ * ✅ Mobile responsive
+ * ✅ Job bookmarking
+ * ✅ Multi-step forms
+ * ✅ AI processing simulation
+ * 
+ * 
+ * FILE STRUCTURE:
+ * --------------
+ * index.html          - Homepage
+ * upload.html         - Resume upload page
+ * css/styles.css      - Main styles
+ * css/upload.css      - Upload page styles
+ * js/main.js          - Main functionality
+ * js/jobs-data.js     - Job listings (30+ jobs)
+ * js/upload.js        - Upload page functionality
+ * 
+ * 
+ * TESTING LOCALLY:
+ * ---------------
+ * 
+ * Python:
+ *   python -m http.server 8000
+ * 
+ * Node.js:
+ *   npx http-server -p 8000
+ * 
+ * PHP:
+ *   php -S localhost:8000
+ * 
+ * Then open: http://localhost:8000
+ * 
+ * 
+ * DEPLOYMENT:
+ * ----------
+ * - GitHub Pages: Free hosting
+ * - Netlify: Drag & drop deployment
+ * - Vercel: One-command deployment
+ * - Any web hosting: Upload via FTP
+ * 
+ * 
+ * IMPORTANT NOTES:
+ * ---------------
+ * ⚠️ Videos load from online CDN (no download needed)
+ * ⚠️ Images use placeholder URLs (replace with your own)
+ * ⚠️ This is frontend only (add backend for real AI)
+ * ⚠️ Resume upload is simulated (no actual file processing)
+ * 
+ * 
+ * NEED HELP?
+ * ----------
+ * Check README.md for full documentation
+ * All features are working out of the box!
+ * 
+ * 
+ * ENJOY YOUR PROFESSIONAL RECRUITMENT WEBSITE! 🚀
+ */

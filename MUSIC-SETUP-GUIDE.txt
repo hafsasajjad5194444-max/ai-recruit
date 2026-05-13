@@ -1,0 +1,95 @@
+# BACKGROUND MUSIC SETUP GUIDE
+# ============================
+
+## How to Add Calm Background Music
+
+### STEP 1: Download Free Calm Music
+Go to one of these websites to download free calm background music:
+
+1. **Pixabay** (Recommended)
+   - Visit: https://pixabay.com/music/search/calm/
+   - Search for "calm" or "relaxing"
+   - Download MP3 format
+   - No attribution required
+
+2. **Free Music Archive**
+   - Visit: https://freemusicarchive.org/
+   - Search for "ambient" or "calm"
+   - Download MP3 format
+
+3. **YouTube Audio Library**
+   - Visit: https://www.youtube.com/audiolibrary
+   - Filter by "Calm" mood
+   - Download MP3
+
+### STEP 2: Prepare Your Music File
+
+1. Download the music file
+2. Rename it to: **background-music.mp3**
+3. Make sure it's in MP3 format
+
+### STEP 3: Add to Your Project
+
+1. Copy the file **background-music.mp3**
+2. Paste it into the **audio** folder in your project:
+   
+   📁 ai short listing resume
+      📁 audio
+         🎵 background-music.mp3  ← Put file here!
+
+### STEP 4: Test the Music
+
+1. Open index.html in your browser
+2. Click the 🔊 speaker icon in the header
+3. Music should start playing!
+
+### RECOMMENDED MUSIC SETTINGS:
+
+- **Genre**: Ambient, Calm, Relaxing, Lo-fi
+- **Duration**: 2-5 minutes (it will loop automatically)
+- **Volume**: Medium to Low (adjust in browser)
+- **Format**: MP3 (best compatibility)
+- **File Size**: Under 5MB for faster loading
+
+### POPULAR CALM MUSIC KEYWORDS:
+
+Search for these on music websites:
+- "Calm Piano"
+- "Ambient Relaxation"
+- "Soft Background Music"
+- "Peaceful Meditation"
+- "Lo-fi Chill"
+- "Soft Jazz"
+
+### TROUBLESHOOTING:
+
+❌ **Music Not Playing?**
+- Check file name is exactly: background-music.mp3
+- Check file is in the audio/ folder
+- Click the speaker icon to unmute
+- Check browser console for errors
+- Try a different browser
+
+❌ **File Too Large?**
+- Compress the MP3 online: https://www.freeconvert.com/mp3-compressor
+- Target size: 2-3 MB
+
+✅ **Music Working!**
+- Users can toggle it on/off with the speaker icon
+- Music loops automatically
+- Starts muted (user must click to enable)
+
+### ALTERNATIVE: Use Your Own Music
+
+If you have your own calm music:
+1. Convert to MP3 format (if needed)
+2. Rename to: background-music.mp3
+3. Place in audio/ folder
+4. Enjoy!
+
+---
+
+**Note**: The music toggle button is already working in your website. You just need to add the actual music file!
+
+**Questions?** Check the audio folder location:
+c:\Users\Talha\Desktop\ai short listing resume\audio\

@@ -1,0 +1,521 @@
+﻿[ +155 ms] Unable to locate an Android SDK.
+[   +7 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[        ] executing: [C:\Users\Talha\Documents\flutter 1\flutter/] git -c log.showSignature=false log HEAD -n 1 --pretty=format:%ad --date=iso
+[  +34 ms] Exit code 0 from: git -c log.showSignature=false log HEAD -n 1 --pretty=format:%ad --date=iso
+[        ] 2026-03-03 16:03:22 -0800
+[  +16 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +1 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +35 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +2 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +32 ms] executing: [C:\Users\Talha\Desktop\ai short listing resume\flutter files/] C:\Users\Talha\Documents\flutter 1\flutter\bin\cache\dart-sdk\bin\dart pub --suppress-analytics --directory . get --example
+Resolving dependencies...
+Downloading packages...
+  flutter_lints 2.0.3 (6.0.0 available)
+  lints 2.1.1 (6.1.0 available)
+  meta 1.17.0 (1.18.2 available)
+  test_api 0.7.10 (0.7.11 available)
+  vector_math 2.2.0 (2.3.0 available)
+Got dependencies!
+5 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+[ +108 ms] Found plugin webview_windows at C:\Users\Talha\AppData\Local\Pub\Cache\hosted\pub.dev\webview_windows-0.4.0\
+[  +40 ms] Found plugin webview_windows at C:\Users\Talha\AppData\Local\Pub\Cache\hosted\pub.dev\webview_windows-0.4.0\
+[   +6 ms] Skipping generating web_plugin_registrant.dart because it is up-to-date.
+[  +27 ms] Found plugin webview_windows at C:\Users\Talha\AppData\Local\Pub\Cache\hosted\pub.dev\webview_windows-0.4.0\
+[   +2 ms] Generating C:\Users\Talha\Desktop\ai short listing resume\flutter files\android\app\src\main\java\io\flutter\plugins\GeneratedPluginRegistrant.java
+[   +3 ms] Skipping generating GeneratedPluginRegistrant.java because it is up-to-date.
+[   +3 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[        ] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[   +1 ms] Skipping generating generated_plugins.cmake because it is up-to-date.
+[   +1 ms] Skipping generating generated_plugin_registrant.h because it is up-to-date.
+[   +1 ms] Skipping generating generated_plugin_registrant.cc because it is up-to-date.
+[        ] Skipping generating generated_plugins.cmake because it is up-to-date.
+[   +1 ms] Skipping generating GeneratedPluginRegistrant.h because it is up-to-date.
+[        ] Skipping generating GeneratedPluginRegistrant.m because it is up-to-date.
+[        ] Skipping generating GeneratedPluginRegistrant.swift because it is up-to-date.
+[  +81 ms] Initializing file store
+[   +1 ms] Done initializing file store
+[   +7 ms] Skipping target: gen_localizations
+[   +1 ms] gen_dart_plugin_registrant: Starting due to {InvalidatedReasonKind.inputChanged: The following inputs have updated contents: C:\Users\Talha\Desktop\ai short listing resume\flutter files\.dart_tool\package_config.json}
+[  +28 ms] Found plugin webview_windows at C:\Users\Talha\AppData\Local\Pub\Cache\hosted\pub.dev\webview_windows-0.4.0\
+[   +2 ms] gen_dart_plugin_registrant: Complete
+[   +1 ms] Skipping target: _composite
+[   +1 ms] complete
+[   +3 ms] Launching lib\main.dart on Windows in debug mode...
+[   +2 ms] C:\Users\Talha\Documents\flutter 1\flutter\bin\cache\dart-sdk\bin\dartaotruntime.exe C:\Users\Talha\Documents\flutter 1\flutter\bin\cache\dart-sdk\bin\snapshots\frontend_server_aot.dart.snapshot --sdk-root C:\Users\Talha\Documents\flutter 1\flutter\bin\cache\artifacts\engine\common\flutter_patched_sdk/ --incremental --target=flutter --experimental-emit-debug-metadata -DFLUTTER_VERSION=3.41.4 -DFLUTTER_CHANNEL=stable -DFLUTTER_GIT_URL=https://github.com/flutter/flutter.git -DFLUTTER_FRAMEWORK_REVISION=ff37bef603 -DFLUTTER_ENGINE_REVISION=e4b8dca3f1 -DFLUTTER_DART_VERSION=3.11.1 --output-dill C:\Users\Talha\AppData\Local\Temp\flutter_tools.e3e02bf6\flutter_tool.29f4f0a9\app.dill --packages C:\Users\Talha\Desktop\ai short listing resume\flutter files\.dart_tool\package_config.json -Ddart.vm.profile=false -Ddart.vm.product=false --enable-asserts --track-widget-creation --filesystem-scheme org-dartlang-root --initialize-from-dill build\8730b13ca0249799964d0a71255a8f3b.cache.dill.track.dill --verbosity=error --enable-experiment=alternative-invalidation-strategy
+[  +18 ms] executing: C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe -format json -products * -utf8 -latest -version 16 -requires Microsoft.VisualStudio.Workload.NativeDesktop Microsoft.VisualStudio.Component.VC.Tools.x86.x64 Microsoft.VisualStudio.Component.VC.CMake.Project
+[  +82 ms] Exit code 0 from: C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe -format json -products * -utf8 -latest -version 16 -requires Microsoft.VisualStudio.Workload.NativeDesktop Microsoft.VisualStudio.Component.VC.Tools.x86.x64 Microsoft.VisualStudio.Component.VC.CMake.Project
+[        ] [
+             {
+               "instanceId": "1d7f4229",
+               "installDate": "2026-04-10T05:43:12Z",
+               "installationName": "VisualStudio/18.4.3+11626.88",
+               "installationPath": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community",
+               "installationVersion": "18.4.11626.88",
+               "productId": "Microsoft.VisualStudio.Product.Community",
+               "productPath": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\devenv.exe",
+               "state": 4294967295,
+               "isComplete": true,
+               "isLaunchable": true,
+               "isPrerelease": false,
+               "isRebootRequired": false,
+               "displayName": "Visual Studio Community 2026",
+               "description": "Everything you need to build modern apps ΓÇô free for you, built for impact.",
+               "channelId": "VisualStudio.18.Release",
+               "channelUri": "https://aka.ms/vs/18/stable/channel",
+               "enginePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service",
+               "expirationDate": "2026-06-24T17:00:00+00:00",
+               "installedChannelId": "VisualStudio.18.Release",
+               "installedChannelUri": "https://aka.ms/vs/18/stable/channel",
+               "releaseNotes": "https://docs.microsoft.com/en-us/visualstudio/releases/18/release-notes-v18.4#18.4.3",
+               "resolvedInstallationPath": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community",
+               "retirementDate": "2026-09-22T17:00:00+00:00",
+               "thirdPartyNotices": "https://go.microsoft.com/fwlink/?LinkId=661480",
+               "updateDate": "2026-04-10T05:43:12.9483646Z",
+               "catalog": {
+                 "buildBranch": "stable",
+                 "buildVersion": "18.4.11626.88",
+                 "featureReleaseMonth": "03",
+                 "featureReleaseYear": "2026",
+                 "id": "VisualStudio/18.4.3+11626.88",
+                 "includeBuildVersionInDisplayVersion": "False",
+                 "localBuild": "build-lab",
+                 "manifestName": "VisualStudio",
+                 "manifestType": "installer",
+                 "productDisplayVersion": "18.4.3",
+                 "productLine": "Dev18",
+                 "productLineVersion": "18",
+                 "productMilestone": "RTW",
+                 "productMilestoneIsPreRelease": "False",
+                 "productName": "Visual Studio",
+                 "productPatchVersion": "3",
+                 "productPreReleaseMilestoneSuffix": "1.0",
+                 "productRelease": "RTW",
+                 "productSemanticVersion": "18.4.3+11626.88",
+                 "requiredEngineVersion": "4.4.38.63497"
+               },
+               "properties": {
+                 "appLocalWPF": "false",
+                 "campaignId": "2500:fe535422967e4878b2aba7e967baf3d5",
+                 "canceled": "0",
+                 "channelManifestId": "VisualStudio.18.Release/18.4.3+11626.88",
+                 "includeRecommended": "1",
+                 "nickname": "",
+                 "setupEngineFilePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\setup.exe"
+               }
+             }
+           ]
+[   +2 ms] Building Windows application...
+[   +5 ms] <- compile package:ai_resume_shortlisting/main.dart
+[  +12 ms] executing: C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -S C:\Users\Talha\Desktop\ai short listing resume\flutter files\windows -B C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64 -G Visual Studio 18 2026 -A x64 -DFLUTTER_TARGET_PLATFORM=windows-x64
+[  +35 ms] -- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.22621.
+flutter.bat : [  +14 ms] Nuget is not installed.
+At line:1 char:84
++ ... ter files"; & "C:\Users\Talha\Documents\flutter 1\flutter\bin\flutter ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([  +14 ms] Nuget is not installed.:String) [], R 
+   emoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[  +29 ms] CMake Warning (dev) at 
+flutter/ephemeral/.plugin_symlinks/webview_windows/windows/CMakeLists.txt:34 
+(add_custom_command):
+[        ]   The following keywords are not supported when using
+[        ]   add_custom_command(TARGET): DEPENDS.
+[        ]   Policy CMP0175 is not set: add_custom_command() rejects invalid arguments.
+[        ]   Run "cmake --help-policy CMP0175" for policy details.  Use the cmake_policy
+[        ]   command to set the policy and suppress this warning.
+[        ] This warning is for project developers.  Use -Wno-dev to suppress it.
+[        ] -- Building with D3D texture support.
+[        ] -- Configuring done (0.1s)
+[ +283 ms] -- Generating done (0.3s)
+[  +12 ms] -- Build files have been written to: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64
+[   +7 ms] executing: C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe --build C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64 --config Debug --target INSTALL --verbose
+[  +41 ms] Change Dir: 'C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64'
+[        ] Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" INSTALL.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+[  +98 ms] MSBuild version 18.4.0+6e61e96ac for .NET Framework
+[  +69 ms] Build started 4/9/2026 11:43:57 PM.
+[ +132 ms] Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\INSTALL.vcxproj" on node 1 (default targets).
+[        ] Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\INSTALL.vcxproj" (1) is building "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\ZERO_CHECK.vcxproj" (2) on node 1 (default targets).
+[        ] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +4 ms] InitializeBuildStatus:
+[        ]   Creating "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
+[   +9 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[  +21 ms] FinalizeBuildStatus:
+[        ]   Deleting file "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\unsuccessfulbuild".
+[        ]   Touching "x64\Debug\ZERO_CHECK\ZERO_CHECK.tlog\ZERO_CHECK.lastbuildstate".
+[   +6 ms] Done Building Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\ZERO_CHECK.vcxproj" (default targets).
+[  +34 ms] Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\INSTALL.vcxproj" (1) is building "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\ALL_BUILD.vcxproj" (3) on node 1 (default targets).
+[        ] Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\ALL_BUILD.vcxproj" (3) is building "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\plugins\webview_windows\webview_windows_DEPENDENCIES_DOWNLOAD.vcxproj" (4) on node 1 (default targets).
+[        ] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +2 ms] InitializeBuildStatus:
+[        ]   Creating "x64\Debug\webview_windows_DEPENDENCIES_DOWNLOAD\webview_.91F072CD.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "x64\Debug\webview_windows_DEPENDENCIES_DOWNLOAD\webview_.91F072CD.tlog\unsuccessfulbuild".
+[   +3 ms] PreBuildEvent:
+[        ]   setlocal
+[        ]   ..\..\nuget.exe install Microsoft.Windows.ImplementationLibrary -Version 1.0.220914.1 -ExcludeVersion -OutputDirectory "C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/packages"
+[        ]   if %errorlevel% neq 0 goto :cmEnd
+[        ]   ..\..\nuget.exe install Microsoft.Web.WebView2 -Version 1.0.1210.39 -ExcludeVersion -OutputDirectory "C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/packages"
+[        ]   if %errorlevel% neq 0 goto :cmEnd
+[        ]   :cmEnd
+[        ]   endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+[        ]   :cmErrorLevel
+[        ]   exit /b %1
+[        ]   :cmDone
+[        ]   if %errorlevel% neq 0 goto :VCEnd
+[        ]   :VCEnd
+[ +289 ms]   Feeds used:
+[        ]     C:\Users\Talha\.nuget\packages\
+[        ]     https://api.nuget.org/v3/index.json
+[  +43 ms]   Package "Microsoft.Windows.ImplementationLibrary.1.0.220914.1" is already installed.
+[ +276 ms]   Feeds used:
+[        ]     C:\Users\Talha\.nuget\packages\
+[        ]     https://api.nuget.org/v3/index.json
+[  +41 ms]   Package "Microsoft.Web.WebView2.1.0.1210.39" is already installed.
+[  +12 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[   +6 ms] FinalizeBuildStatus:
+[        ]   Deleting file "x64\Debug\webview_windows_DEPENDENCIES_DOWNLOAD\webview_.91F072CD.tlog\unsuccessfulbuild".
+[        ]   Touching "x64\Debug\webview_windows_DEPENDENCIES_DOWNLOAD\webview_.91F072CD.tlog\webview_windows_DEPENDENCIES_DOWNLOAD.lastbuildstate".
+[        ] Done Building Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\plugins\webview_windows\webview_windows_DEPENDENCIES_DOWNLOAD.vcxproj" (default targets).
+[  +46 ms] Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\ALL_BUILD.vcxproj" (3) is building "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\runner\ai_resume_shortlisting.vcxproj" (5) on node 1 (default targets).
+[        ] Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\runner\ai_resume_shortlisting.vcxproj" (5) is building "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\flutter\flutter_assemble.vcxproj" (6) on node 1 (default targets).
+[        ] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +2 ms] InitializeBuildStatus:
+[        ]   Creating "x64\Debug\flutter_assemble\flutter_assemble.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "x64\Debug\flutter_assemble\flutter_assemble.tlog\unsuccessfulbuild".
+[   +3 ms] CustomBuild:
+[        ]   "The build of 'C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\CMakeFiles\4e73ff91c625127a691227641f4b205e\flutter_assemble.rule' depends on 'C:\USERS\TALHA\DESKTOP\AI SHORT LISTING RESUME\FLUTTER FILES\WINDOWS\FLUTTER\EPHEMERAL\FLUTTER_WINDOWS.DLL' which is produced by the build of 'C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\CMakeFiles\709d09cba4e8bfc692033ff17e8af653\flutter_windows.dll.rule'. The items cannot be built in parallel."
+[  +50 ms]   Generating C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/flutter_windows.dll, C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/flutter_export.h, C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/flutter_windows.h, C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/flutter_messenger.h, C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/flutter_plugin_registrar.h, C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/flutter_texture_registrar.h, C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, C:/Users/Talha/Desktop/ai short listing resume/flutter files/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_
+[ +985 ms]   [ +235 ms] Unable to locate an Android SDK.
+[   +1 ms]   [   +6 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[   +5 ms]   [   +6 ms] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[   +1 ms]   [   +1 ms] Artifact Instance of 'WindowsEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[  +39 ms]   [  +40 ms] Artifact Instance of 'MaterialFonts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'GradleWrapper' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidGenSnapshotArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'AndroidInternalBuildArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterWebSdk' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterEngineStamp' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LegacyCanvasKitRemover' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterSdk' is not required, skipping update.
+[        ]   [   +1 ms] Artifact Instance of 'MacOSEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxEngineArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'LinuxFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'MacOSFuchsiaSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerSDKArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FlutterRunnerDebugSymbols' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'IosUsbArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'FontSubsetArtifacts' is not required, skipping update.
+[        ]   [        ] Artifact Instance of 'PubDependencies' is not required, skipping update.
+[  +18 ms]   [  +19 ms] Initializing file store
+[  +11 ms]   [  +11 ms] Done initializing file store
+[  +38 ms]   [  +38 ms] Skipping target: dart_build
+[   +1 ms]   [   +1 ms] Skipping target: gen_dart_plugin_registrant
+[+2440 ms]   [+2440 ms] Skipping target: unpack_windows
+[        ]   [        ] Skipping target: install_code_assets
+[        ]   [        ] Skipping target: gen_localizations
+[ +332 ms]   [ +332 ms] Skipping target: kernel_snapshot_program
+[ +255 ms]   [ +255 ms] Skipping target: debug_bundle_windows-x64_assets
+[        ]   [        ] Persisting file store
+[   +7 ms]   [   +7 ms] Done persisting file store
+[  +10 ms]   [  +10 ms] build succeeded.
+[   +4 ms]   [   +4 ms] "flutter assemble" took 3,168ms.
+[  +40 ms]   [  +40 ms] Running 1 shutdown hook
+[        ]   [        ] Shutdown hooks complete
+[ +261 ms]   [ +261 ms] exiting with code 0
+[  +52 ms] FinalizeBuildStatus:
+[        ]   Deleting file "x64\Debug\flutter_assemble\flutter_assemble.tlog\unsuccessfulbuild".
+[        ]   Touching "x64\Debug\flutter_assemble\flutter_assemble.tlog\flutter_assemble.lastbuildstate".
+[        ] Done Building Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\flutter\flutter_assemble.vcxproj" (default targets).
+[  +21 ms] Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\runner\ai_resume_shortlisting.vcxproj" (5) is building "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\flutter\flutter_wrapper_app.vcxproj" (7) on node 1 (default targets).
+[        ] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +2 ms] InitializeBuildStatus:
+[        ]   Creating "flutter_wrapper_app.dir\Debug\flutter_.F65DBDD3.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "flutter_wrapper_app.dir\Debug\flutter_.F65DBDD3.tlog\unsuccessfulbuild".
+[   +1 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[  +32 ms] ClCompile:
+[        ]   All outputs are up-to-date.
+[  +15 ms] Lib:
+[        ]   All outputs are up-to-date.
+[   +1 ms]   flutter_wrapper_app.vcxproj -> C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\flutter\Debug\flutter_wrapper_app.lib
+[  +14 ms] FinalizeBuildStatus:
+[        ]   Deleting file "flutter_wrapper_app.dir\Debug\flutter_.F65DBDD3.tlog\unsuccessfulbuild".
+[        ]   Touching "flutter_wrapper_app.dir\Debug\flutter_.F65DBDD3.tlog\flutter_wrapper_app.lastbuildstate".
+[        ] Done Building Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\flutter\flutter_wrapper_app.vcxproj" (default targets).
+[  +32 ms] Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\runner\ai_resume_shortlisting.vcxproj" (5) is building "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\plugins\webview_windows\webview_windows_plugin.vcxproj" (8) on node 1 (default targets).
+[        ] Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\plugins\webview_windows\webview_windows_plugin.vcxproj" (8) is building "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\flutter\flutter_wrapper_plugin.vcxproj" (9) on node 1 (default targets).
+[        ] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +1 ms] InitializeBuildStatus:
+[        ]   Creating "flutter_wrapper_plugin.dir\Debug\flutter_.07CBACED.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "flutter_wrapper_plugin.dir\Debug\flutter_.07CBACED.tlog\unsuccessfulbuild".
+[   +1 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[   +5 ms] ClCompile:
+[        ]   All outputs are up-to-date.
+[   +1 ms] Lib:
+[        ]   All outputs are up-to-date.
+[        ]   flutter_wrapper_plugin.vcxproj -> C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\flutter\Debug\flutter_wrapper_plugin.lib
+[   +5 ms] FinalizeBuildStatus:
+[        ]   Deleting file "flutter_wrapper_plugin.dir\Debug\flutter_.07CBACED.tlog\unsuccessfulbuild".
+[        ]   Touching "flutter_wrapper_plugin.dir\Debug\flutter_.07CBACED.tlog\flutter_wrapper_plugin.lastbuildstate".
+[        ] Done Building Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\flutter\flutter_wrapper_plugin.vcxproj" (default targets).
+[   +4 ms] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +2 ms] InitializeBuildStatus:
+[        ]   Creating "webview_windows_plugin.dir\Debug\webview_.4B1B1451.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "webview_windows_plugin.dir\Debug\webview_.4B1B1451.tlog\unsuccessfulbuild".
+[   +1 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[  +19 ms] ComputeStdModulesCompileInputs:
+[        ]   Reading library manifest file 'C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\modules\modules.json' which provides data for library 'microsoft/STL'.
+[        ]   Adding module source 'C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\modules\std.ixx' from library 'microsoft/STL' to be built with this project.
+[        ]   Adding module source 'C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\modules\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
+[  +21 ms] ClCompile:
+[        ]   All outputs are up-to-date.
+[  +19 ms] Link:
+[        ]   All outputs are up-to-date.
+[   +1 ms]   webview_windows_plugin.vcxproj -> C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\plugins\webview_windows\Debug\webview_windows_plugin.dll
+[   +5 ms] _CopyOutOfDateSourceItemsToOutputDirectoryAlways:
+[        ]   Copying file from "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\packages\Microsoft.Web.WebView2\build\native\x64\WebView2Loader.dll" to "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\plugins\webview_windows\Debug\WebView2Loader.dll".
+[   +3 ms] FinalizeBuildStatus:
+[        ]   Deleting file "webview_windows_plugin.dir\Debug\webview_.4B1B1451.tlog\unsuccessfulbuild".
+[        ]   Touching "webview_windows_plugin.dir\Debug\webview_.4B1B1451.tlog\webview_windows_plugin.lastbuildstate".
+[        ] Done Building Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\plugins\webview_windows\webview_windows_plugin.vcxproj" (default targets).
+[   +6 ms] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +3 ms] InitializeBuildStatus:
+[        ]   Creating "ai_resume_shortlisting.dir\Debug\ai_resum.DBF6A937.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "ai_resume_shortlisting.dir\Debug\ai_resum.DBF6A937.tlog\unsuccessfulbuild".
+[   +1 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[   +4 ms] ComputeStdModulesCompileInputs:
+[        ]   Reading library manifest file 'C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\modules\modules.json' which provides data for library 'microsoft/STL'.
+[        ]   Adding module source 'C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\modules\std.ixx' from library 'microsoft/STL' to be built with this project.
+[        ]   Adding module source 'C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\modules\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
+[  +10 ms] ClCompile:
+[        ]   All outputs are up-to-date.
+[   +4 ms] ResourceCompile:
+[        ]   All outputs are up-to-date.
+[   +5 ms] Link:
+[        ]   All outputs are up-to-date.
+[        ]   ai_resume_shortlisting.vcxproj -> C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\runner\Debug\ai_resume_shortlisting.exe
+[   +4 ms] _CopyOutOfDateSourceItemsToOutputDirectoryAlways:
+[        ]   Copying file from "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\packages\Microsoft.Web.WebView2\build\native\x64\WebView2Loader.dll" to "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\runner\Debug\WebView2Loader.dll".
+[   +2 ms] FinalizeBuildStatus:
+[        ]   Deleting file "ai_resume_shortlisting.dir\Debug\ai_resum.DBF6A937.tlog\unsuccessfulbuild".
+[        ]   Touching "ai_resume_shortlisting.dir\Debug\ai_resum.DBF6A937.tlog\ai_resume_shortlisting.lastbuildstate".
+[        ] Done Building Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\runner\ai_resume_shortlisting.vcxproj" (default targets).
+[   +5 ms] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +3 ms] InitializeBuildStatus:
+[        ]   Creating "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild".
+[   +1 ms] CustomBuild:
+[        ]   All outputs are up-to-date.
+[   +6 ms] FinalizeBuildStatus:
+[        ]   Deleting file "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\unsuccessfulbuild".
+[        ]   Touching "x64\Debug\ALL_BUILD\ALL_BUILD.tlog\ALL_BUILD.lastbuildstate".
+[        ] Done Building Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\ALL_BUILD.vcxproj" (default targets).
+[   +5 ms] PrepareForBuild:
+[        ]   Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+[   +2 ms] InitializeBuildStatus:
+[        ]   Creating "x64\Debug\INSTALL\INSTALL.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+[        ]   Touching "x64\Debug\INSTALL\INSTALL.tlog\unsuccessfulbuild".
+[  +26 ms] CustomBuild:
+[        ]   1>
+[   +9 ms] PostBuildEvent:
+[        ]   setlocal
+[        ]   "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DBUILD_TYPE=Debug -P cmake_install.cmake
+[        ]   if %errorlevel% neq 0 goto :cmEnd
+[        ]   :cmEnd
+[        ]   endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+[        ]   :cmErrorLevel
+[        ]   exit /b %1
+[        ]   :cmDone
+[        ]   if %errorlevel% neq 0 goto :VCEnd
+[        ]   :VCEnd
+[  +48 ms]   -- Install configuration: "Debug"
+[   +6 ms]   -- Up-to-date: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/icudtl.dat
+[        ]   -- Up-to-date: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/flutter_windows.dll
+[   +1 ms]   -- Up-to-date: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/webview_windows_plugin.dll
+[        ]   -- Up-to-date: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug
+[  +11 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/AssetManifest.bin
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/audio
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/audio/denielcz-immersivecontrol-button-click-sound-463065.mp3
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/audio/dragon-studio-pop-402324.mp3
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/audio/kauasilbershlachparodes-shutter-click-2-494026.mp3
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/audio/matthewvakaliuk73627-mouse-click-290204.mp3
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/audio/tatamusic-inspiring-inspirational-music-398940.mp3
+[  +17 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/css
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/css/styles.css
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/css/upload.css
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/index.html
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/js
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/js/jobs-data.js
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/js/jobs.js
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/js/main.js
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/js/upload.js
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/assets/www/upload.html
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/FontManifest.json
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/fonts
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+[   +3 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/kernel_blob.bin
+[  +84 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/NativeAssetsManifest.json
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/NOTICES.Z
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/packages
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/packages/cupertino_icons
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+[   +1 ms]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/shaders
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag
+[        ]   -- Installing: C:/Users/Talha/Desktop/ai short listing resume/flutter files/build/windows/x64/runner/Debug/data/flutter_assets/shaders/stretch_effect.frag
+[   +9 ms] FinalizeBuildStatus:
+[        ]   Deleting file "x64\Debug\INSTALL\INSTALL.tlog\unsuccessfulbuild".
+[        ]   Touching "x64\Debug\INSTALL\INSTALL.tlog\INSTALL.lastbuildstate".
+[        ] Done Building Project "C:\Users\Talha\Desktop\ai short listing resume\flutter files\build\windows\x64\INSTALL.vcxproj" (default targets).
+[   +2 ms] Build succeeded.
+[        ]     0 Warning(s)
+[        ]     0 Error(s)
+[        ] Time Elapsed 00:00:06.06
+[  +21 ms] Building Windows application... (completed in 6.7s)
+[   +1 ms] ΓêÜ Built build\windows\x64\runner\Debug\ai_resume_shortlisting.exe
+[ +138 ms] VM Service URL on device: http://127.0.0.1:51306/964r8EwyfDo=/
+[   +1 ms] Caching compiled dill
+[  +19 ms] Connecting to service protocol: http://127.0.0.1:51306/964r8EwyfDo=/
+[  +72 ms] Launching a Dart Developer Service (DDS) instance at http://127.0.0.1:0, connecting to VM service at http://127.0.0.1:51306/964r8EwyfDo=/.
+[ +162 ms] Successfully connected to service protocol: http://127.0.0.1:51306/964r8EwyfDo=/
+[   +6 ms] DevFS: Creating new filesystem on the device (null)
+[  +23 ms] DevFS: Created new filesystem on the device (file:///C:/Users/Talha/AppData/Local/Temp/flutter%20filesc514cc32/flutter%20files/)
+[   +1 ms] Updating assets for windows
+[        ] runHooks() with {TargetFile: C:\Users\Talha\Desktop\ai short listing resume\flutter files\lib\main.dart, BuildMode: debug} and TargetPlatform.windows_x64
+[        ] runHooks() - will perform dart build
+[        ] Initializing file store
+[        ] Done initializing file store
+[   +6 ms] Skipping target: dart_build
+[        ] Persisting file store
+[   +1 ms] Done persisting file store
+[   +2 ms] runHooks() - done
+[  +49 ms] Syncing files to device Windows...
+[   +1 ms] Compiling dart to kernel with 0 updated files
+[        ] Processing bundle.
+[        ] <- recompile package:ai_resume_shortlisting/main.dart db21bb79-d5fd-4a9f-8256-b58e18f21ec7
+[        ] <- db21bb79-d5fd-4a9f-8256-b58e18f21ec7
+[   +1 ms] Bundle processing done.
+[  +42 ms] Updating files.
+[        ] Pending asset builds completed. Writing dirty entries.
+[        ] DevFS: Sync finished
+[        ] Syncing files to device Windows... (completed in 47ms)
+[        ] Synced 0.0MB.
+[        ] <- accept
+[   +1 ms] Connected to _flutterView/0x1a15581c100.
+[   +1 ms] Flutter run key commands.
+[        ] r Hot reload. 
+[        ] R Hot restart.
+[        ] h List all available interactive commands.
+[        ] d Detach (terminate "flutter run" but leave application running).
+[        ] c Clear the screen
+[        ] q Quit (terminate the application on the device).
+[        ] A Dart VM Service on Windows is available at: http://127.0.0.1:51310/wxwR2-XUX5U=/
+[        ] The Flutter DevTools debugger and profiler on Windows is available at: http://127.0.0.1:51310/wxwR2-XUX5U=/devtools/?uri=ws://127.0.0.1:51310/wxwR2-XUX5U=/ws
+[+6684 ms] Service protocol connection closed.
+[        ] Lost connection to device.
+[        ] DevFS: Deleting filesystem on the device (file:///C:/Users/Talha/AppData/Local/Temp/flutter%20filesc514cc32/flutter%20files/)
+[        ] DevFS: Deleted filesystem on the device (file:///C:/Users/Talha/AppData/Local/Temp/flutter%20filesc514cc32/flutter%20files/)
+[   +1 ms] "flutter run" took 14,448ms.
+[  +15 ms] Running 3 shutdown hooks
+[   +9 ms] Shutdown hooks complete
+[ +180 ms] exiting with code 0

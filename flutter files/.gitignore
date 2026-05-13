@@ -1,0 +1,10 @@
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+.idea/
+.vscode/
+**/generated_plugin_registrant.dart
+**/flutter_export_environment.sh
+pubspec.lock

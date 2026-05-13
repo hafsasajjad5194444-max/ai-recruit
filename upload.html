@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Upload your resume and let AI match you with perfect job opportunities">
+    <title>Upload Resume | AI Resume Shortlisting</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.14/mammoth.browser.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header scrolled" id="header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>AI<span class="highlight">Recruit</span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#jobs" class="nav-link">Jobs</a></li>
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="index.html#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="upload.html" class="btn btn-primary">Upload Resume</a>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="upload-background">
+            <video autoplay muted loop playsinline>
+                <source src="https://cdn.coverr.co/videos/coverr-network-connections-animation-4114/1080p.mp4" type="video/mp4">
+            </video>
+            <div class="upload-overlay"></div>
+        </div>
+
+        <div class="container upload-container">
+            <div class="upload-content">
+                <div class="upload-header">
+                    <h1>Upload Your Resume</h1>
+                    <p>Let our AI analyze your skills and match you with perfect job opportunities</p>
+                </div>
+
+                <!-- Progress Steps -->
+                <div class="progress-steps">
+                    <div class="step active">
+                        <div class="step-circle">1</div>
+                        <div class="step-label">Personal Info</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-circle">2</div>
+                        <div class="step-label">Upload Resume</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-circle">3</div>
+                        <div class="step-label">AI Analysis</div>
+                    </div>
+                </div>
+
+                <!-- Upload Form -->
+                <form class="upload-form" id="uploadForm">
+                    <!-- Step 1: Personal Information -->
+                    <div class="form-step active" id="step1">
+                        <h2>Personal Information</h2>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+92 300 1234567">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-next" onclick="nextStep()">
+                            Next Step <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Step 2: Resume Upload -->
+                    <div class="form-step" id="step2">
+                        <h2>Upload Your Resume</h2>
+                        
+                        <div class="upload-area" id="uploadArea">
+                            <input type="file" id="resumeFile" name="resumeFile" accept=".pdf,.doc,.docx" hidden>
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h3>Drag & Drop your resume here</h3>
+                            <p>or click to browse</p>
+                            <p class="file-info">Supported formats: PDF, DOC, DOCX (Max 5MB)</p>
+                        </div>
+
+                        <div class="file-preview" id="filePreview" style="display: none;">
+                            <div class="file-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="file-details">
+                                <p class="file-name" id="fileName"></p>
+                                <p class="file-size" id="fileSize"></p>
+                            </div>
+                            <button type="button" class="btn-remove" onclick="removeFile()">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="coverLetter">Cover Letter (Optional)</label>
+                            <textarea id="coverLetter" name="coverLetter" rows="6" placeholder="Tell us why you're the perfect fit..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="desiredRole">Desired Role</label>
+                            <select id="desiredRole" name="desiredRole">
+                                <option value="">Select a role</option>
+                                <option value="data-analyst">Data Analyst</option>
+                                <option value="hr-manager">HR Manager</option>
+                                <option value="software-engineer">Software Engineer</option>
+                                <option value="marketing-manager">Marketing Manager</option>
+                                <option value="product-manager">Product Manager</option>
+                                <option value="designer">Designer</option>
+                                <option value="devops-engineer">DevOps Engineer</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-secondary" onclick="prevStep()">
+                                <i class="fas fa-arrow-left"></i> Previous
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Submit & Analyze
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Processing (shown after submission) -->
+                    <div class="form-step" id="step3">
+                        <div class="processing-animation">
+                            <div class="ai-brain">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h2>AI is Analyzing Your Resume</h2>
+                            <p>Please wait while our AI processes your information...</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <p class="progress-text" id="progressText">Extracting information... 0%</p>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Results Section (shown after processing) -->
+                <div class="results-section" id="resultsSection" style="display: none;">
+                    <div class="results-header">
+                        <i class="fas fa-check-circle"></i>
+                        <h2>Analysis Complete!</h2>
+                        <p>AI match confidence: <span id="matchCount">0</span>%</p>
+                    </div>
+
+                    <div class="match-score">
+                        <h3>Your Profile Strength</h3>
+                        <div class="score-circle">
+                            <svg width="200" height="200">
+                                <circle cx="100" cy="100" r="90" fill="none" stroke="#e5e7eb" stroke-width="12"></circle>
+                                <circle cx="100" cy="100" r="90" fill="none" stroke="url(#gradient)" stroke-width="12" 
+                                        stroke-dasharray="565" stroke-dashoffset="141" stroke-linecap="round" 
+                                        transform="rotate(-90 100 100)"></circle>
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%">
+                                        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="score-value">85%</div>
+                        </div>
+                        <p id="analysisSummary">Strong profile! Your resume is well-optimized for AI matching.</p>
+                        <p class="analysis-duration" id="analysisDuration"></p>
+                        <div class="role-prediction" id="rolePrediction"></div>
+                        <div class="api-result-message" id="apiResultMessage"></div>
+                    </div>
+
+                    <div class="extracted-skills">
+                        <h3>Detected Skills</h3>
+                        <div class="skills-container" id="detectedSkills">
+                            <!-- Skills will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="scoring-breakdown-section" id="scoringBreakdownContainer" style="display: none;">
+                        <h3>Scoring Breakdown</h3>
+                        <div class="scoring-bars" id="scoringBars">
+                            <!-- Scoring breakdown will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="recommended-jobs-section" id="recommendedJobsContainer" style="display: none;">
+                        <h3><i class="fas fa-star"></i> Recommended Jobs For You</h3>
+                        <div class="recommended-jobs-list">
+                            <!-- Recommended jobs will be populated dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="index.html#jobs" class="btn btn-large btn-primary">
+                            <i class="fas fa-briefcase"></i> View Matched Jobs
+                        </a>
+                        <button class="btn btn-large btn-secondary" onclick="resetForm()">
+                            <i class="fas fa-redo"></i> Upload Another Resume
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Sidebar -->
+            <div class="benefits-sidebar">
+                <h3>Why Upload Your Resume?</h3>
+                <div class="benefit-item">
+                    <i class="fas fa-magic"></i>
+                    <div>
+                        <h4>AI-Powered Matching</h4>
+                        <p>Get matched with jobs that fit your skills and experience</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-lock"></i>
+                    <div>
+                        <h4>100% Secure</h4>
+                        <p>Your data is encrypted and never shared without permission</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-bolt"></i>
+                    <div>
+                        <h4>Instant Results</h4>
+                        <p>Get job recommendations in seconds, not days</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-chart-line"></i>
+                    <div>
+                        <h4>Profile Insights</h4>
+                        <p>Receive detailed analysis and improvement suggestions</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-bell"></i>
+                    <div>
+                        <h4>Smart Alerts</h4>
+                        <p>Get notified when new matching jobs are posted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>AI<span class="highlight">Recruit</span></span>
+                    </div>
+                    <p>Revolutionizing recruitment with artificial intelligence.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#jobs">Browse Jobs</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="upload.html">Upload Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-user"></i> Hafsa Sajjad</li>
+                        <li><i class="fas fa-phone"></i> 03255406818</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Women University Canal Road</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hafsa Sajjad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jobs-data.js"></script>
+    <script src="js/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "ce44c92aef2c40d45df50172d009eed8218038a69c7d282ee0c829a8934f86e4": {
+    "resume_text": "Experienced software engineer with 5 years of Python, Flask, SQL, AWS, Docker, and Git experience. Developed multiple web applications and led a team of 3 developers. Bachelor degree in Computer Science.",
+    "job_description": "Software Engineer role requiring Python, backend APIs, cloud experience, and database skills.",
+    "result": {
+      "match": false,
+      "label": 0,
+      "confidence": 0.4455,
+      "matched_keywords": [
+        "and",
+        "engineer",
+        "experience",
+        "python",
+        "software"
+      ],
+      "job_keywords": [
+        "and",
+        "apis",
+        "backend",
+        "cloud",
+        "database",
+        "engineer",
+        "experience",
+        "python",
+        "requiring",
+        "role",
+        "skills",
+        "software"
+      ],
+      "predicted_role": "Software Engineer",
+      "inference_ms": 539,
+      "scoring_breakdown": {
+        "keyword_match": 0.25,
+        "length_bonus": 0.015,
+        "skills_bonus": 0.1,
+        "experience_bonus": 0.08
+      }
+    },
+    "timestamp": 1778476099.3030634
+  }
+}

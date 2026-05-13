@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Driven Resume Shortlisting System - Browse All Jobs">
+    <title>All Jobs | AI Resume Shortlisting</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- Audio Background (Optional) -->
+    <audio id="bgAudio" loop>
+        <source src="audio/tatamusic-inspiring-inspirational-music-398940.mp3" type="audio/mpeg">
+        <source src="audio/tatamusic-inspiring-inspirational-music-398940.ogg" type="audio/ogg">
+    </audio>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>AI<span class="highlight">Recruit</span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#jobs" class="nav-link active">Jobs</a></li>
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="index.html#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-audio" id="audioToggle">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <a href="upload.html" class="btn btn-primary">Upload Resume</a>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Jobs Section -->
+    <section class="jobs-section" id="jobs">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Browse All Jobs</h2>
+                <p class="section-description">Explore our complete collection of job opportunities across all categories</p>
+            </div>
+
+            <!-- Job Search -->
+            <div class="job-search" data-aos="fade-up">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="jobSearch" placeholder="Search jobs by title, company, skills, or category..." class="search-input">
+                    <button id="clearSearch" class="clear-search-btn" style="display: none;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div id="searchSuggestions" class="search-suggestions"></div>
+                </div>
+            </div>
+
+            <!-- Job Filters -->
+            <div class="job-filters" data-aos="fade-up">
+                <div class="filter-group">
+                    <label for="categoryFilter">Category:</label>
+                    <input type="text" id="categoryFilter" class="filter-input" list="categoryOptions" placeholder="Type or select category...">
+                    <datalist id="categoryOptions">
+                        <!-- Options will be populated by JavaScript -->
+                    </datalist>
+                </div>
+                <div class="filter-group">
+                    <label for="locationFilter">Location:</label>
+                    <input type="text" id="locationFilter" class="filter-input" list="locationOptions" placeholder="Type or select location...">
+                    <datalist id="locationOptions">
+                        <!-- Options will be populated by JavaScript -->
+                    </datalist>
+                </div>
+                <div class="filter-group">
+                    <label for="typeFilter">Type:</label>
+                    <input type="text" id="typeFilter" class="filter-input" list="typeOptions" placeholder="Type or select type...">
+                    <datalist id="typeOptions">
+                        <!-- Options will be populated by JavaScript -->
+                    </datalist>
+                </div>
+                <div class="filter-group">
+                    <button type="button" class="btn btn-secondary" id="resetFilters" style="margin-top: 1.5rem;">Reset Filters</button>
+                </div>
+            </div>
+
+            <!-- Jobs Grid -->
+            <div class="jobs-grid" id="jobsGrid" data-aos="fade-up">
+                <!-- Jobs will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>AI<span class="highlight">Recruit</span></span>
+                    </div>
+                    <p>Revolutionizing recruitment with AI-powered resume shortlisting and intelligent job matching.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#jobs">Jobs</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +92 334 377 7417</p>
+                    <p><i class="fas fa-envelope"></i> info@airecruit.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Recruit. All rights reserved. | Powered by Zarmeena Arif</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jobs-data.js"></script>
+    <script src="js/jobs.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Driven recruitment system - Find your dream job with intelligent matching">
+    <title>AIRecruit | Smart Recruitment Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- Audio Background (Optional) -->
+    <!-- To add your own music: Place a file named 'background-music.mp3' in the 'audio' folder -->
+    <!-- For now, you can download free calm music from: https://pixabay.com/music/search/calm/ -->
+    <audio id="bgAudio" loop>
+        <source src="audio/tatamusic-inspiring-inspirational-music-398940.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="shutterAudio">
+        <source src="audio/kauasilbershlachparodes-shutter-click-2-494026.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clickAudio">
+        <source src="audio/matthewvakaliuk73627-mouse-click-290204.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>AI<span class="highlight">Recruit</span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#jobs" class="nav-link">Jobs</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-audio" id="audioToggle">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <a href="upload.html" class="btn btn-primary">Upload Resume</a>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Animated Background -->
+    <section class="hero" id="home">
+        <div class="hero-animated-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-right">
+                <h1 class="hero-title">
+                    Revolutionize Your <span class="gradient-text">Hiring Process</span>
+                </h1>
+                <p class="hero-subtitle">
+                    AI-powered resume screening matches the perfect candidates to your job openings in seconds. 
+                    Save time, reduce bias, and find top talent effortlessly.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500">0</span>+
+                        <span class="stat-label">Resumes Processed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="150">0</span>+
+                        <span class="stat-label">Companies Trust Us</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="81">0</span>%
+                        <span class="stat-label">Match Accuracy</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#jobs" class="btn btn-large btn-primary">
+                        <i class="fas fa-search"></i> Browse Jobs
+                    </a>
+                    <a href="upload.html" class="btn btn-large btn-secondary">
+                        <i class="fas fa-upload"></i> Upload Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop" alt="AI Technology" class="floating-image active">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop" alt="Business Meeting" class="floating-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Team Work" class="floating-image">
+                <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&h=600&fit=crop" alt="Professional Woman" class="floating-image">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop" alt="Office Collaboration" class="floating-image">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Why Choose Us</span>
+                <h2 class="section-title">Powerful AI-Driven Features</h2>
+                <p class="section-description">
+                    Our advanced machine learning algorithms analyze resumes with unprecedented accuracy
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Matching</h3>
+                    <p>Advanced algorithms match candidates to jobs based on skills, experience, and cultural fit</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Screening</h3>
+                    <p>Process thousands of resumes in seconds, not days. Get results instantly</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Smart Analytics</h3>
+                    <p>Comprehensive dashboards and insights to make data-driven hiring decisions</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Bias-Free Hiring</h3>
+                    <p>Eliminate unconscious bias with objective, skill-based candidate evaluation</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Save Time & Money</h3>
+                    <p>Reduce hiring time by 75% and cut recruitment costs significantly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Simple Process</span>
+                <h2 class="section-title">How It Works</h2>
+            </div>
+            <div class="steps-container">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Upload Your Resume</h3>
+                        <p>Simply drag and drop your resume or browse to upload. We support PDF, DOC, and DOCX formats.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=300&fit=crop" alt="Upload Resume">
+                    </div>
+                </div>
+                <div class="step step-reverse" data-aos="fade-left">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>AI Analysis</h3>
+                        <p>Our AI engine analyzes your skills, experience, qualifications, and matches them with available positions.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop" alt="AI Analysis">
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Get Matched</h3>
+                        <p>Receive personalized job recommendations ranked by compatibility score and requirements match.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop" alt="Get Matched">
+                    </div>
+                </div>
+                <div class="step step-reverse" data-aos="fade-left">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Apply & Connect</h3>
+                        <p>Apply directly to matched positions and connect with recruiters instantly through our platform.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=300&fit=crop" alt="Apply">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section class="jobs" id="jobs">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Career Opportunities</span>
+                <h2 class="section-title">Featured Job Openings</h2>
+                <p class="section-description">
+                    Browse through our curated list of opportunities from top companies
+                </p>
+            </div>
+
+            <!-- Job Assistant Chatbot -->
+            <div class="job-chat" data-aos="fade-up">
+                <div class="chat-card">
+                    <div class="chat-card-header">
+                        <div class="assistant-title">
+                            <i class="fas fa-robot"></i>
+                            <span>Job Assistant</span>
+                        </div>
+                        <p>Type or speak a request like “remote marketing jobs in Karachi” and I’ll find the best matches for you.</p>
+                    </div>
+                    <div id="chatMessages" class="chat-messages"></div>
+                    <div id="chatOptions" class="chat-options"></div>
+                    <div class="chat-input-row">
+                        <input id="chatInput" type="text" placeholder="Type your job request here" autocomplete="off">
+                        <button id="chatSendButton" class="chat-button" type="button"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <div class="chat-help">
+                        <span>Try commands:</span>
+                        <button class="chat-pill">remote marketing jobs</button>
+                        <button class="chat-pill">full-time tech roles</button>
+                        <button class="chat-pill">internship in Lahore</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Filters -->
+            <div class="job-filters" data-aos="fade-up">
+                <div class="filter-group">
+                    <label for="categoryFilter">Category:</label>
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="technology">Technology</option>
+                        <option value="management">Management</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="finance">Finance</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="design">Design</option>
+                        <option value="communication">Communication</option>
+                        <option value="teamwork">Teamwork</option>
+                        <option value="leadership">Leadership</option>
+                        <option value="problem-solving">Problem Solving</option>
+                        <option value="critical-thinking">Critical Thinking</option>
+                        <option value="creativity">Creativity</option>
+                        <option value="adaptability">Adaptability</option>
+                        <option value="time-management">Time Management</option>
+                        <option value="customer-service">Customer Service</option>
+                        <option value="sales">Sales</option>
+                        <option value="writing">Writing</option>
+                        <option value="research">Research</option>
+                        <option value="budgeting">Budgeting</option>
+                        <option value="negotiation">Negotiation</option>
+                        <option value="public-speaking">Public Speaking</option>
+                        <option value="data-entry">Data Entry</option>
+                        <option value="administrative">Administrative</option>
+                        <option value="foreign-languages">Foreign Languages</option>
+                        <option value="project-management">Project Management</option>
+                        <option value="event-planning">Event Planning</option>
+                        <option value="client-relations">Client Relations</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="locationFilter">Location:</label>
+                    <select id="locationFilter" class="filter-select">
+                        <option value="all">All Locations</option>
+                        <option value="lahore">Lahore</option>
+                        <option value="karachi">Karachi</option>
+                        <option value="islamabad">Islamabad</option>
+                        <option value="rawalpindi">Rawalpindi</option>
+                        <option value="faisalabad">Faisalabad</option>
+                        <option value="multan">Multan</option>
+                        <option value="peshawar">Peshawar</option>
+                        <option value="gujranwala">Gujranwala</option>
+                        <option value="sialkot">Sialkot</option>
+                        <option value="remote">Remote</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="typeFilter">Type:</label>
+                    <select id="typeFilter" class="filter-select">
+                        <option value="all">All Types</option>
+                        <option value="full-time">Full Time</option>
+                        <option value="part-time">Part Time</option>
+                        <option value="contract">Contract</option>
+                        <option value="internship">Internship</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" id="resetFilters">Reset Filters</button>
+            </div>
+
+            <!-- Job Listings -->
+            <div class="jobs-grid" id="jobsGrid">
+                <!-- Jobs will be loaded dynamically via JavaScript -->
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn btn-secondary" id="loadMoreJobs">
+                    <i class="fas fa-plus"></i> Load More Jobs
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Success Stories</span>
+                <h2 class="section-title">What Our Users Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Malaika Amin">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"This platform completely transformed our hiring process. We found the perfect Data Analyst in just 3 days!"</p>
+                        <h4>Malaika Amin</h4>
+                        <span>HR Director, Tech Corp</span>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Talha Sajjad">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The AI matching is incredibly accurate. I got matched with my dream job within hours of uploading my resume!"</p>
+                        <h4>Talha Sajjad</h4>
+                        <span>Software Engineer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-image">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Marwah Zafar">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Amazing platform! Reduced our time-to-hire by 70% and the quality of candidates has never been better."</p>
+                        <h4>Marwah Zafar</h4>
+                        <span>Recruitment Manager, Global Inc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">About Us</span>
+                <h2 class="section-title">Revolutionizing Recruitment in Pakistan</h2>
+                <p class="section-description">
+                    Empowering job seekers and employers with AI-driven matching technology
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Our Mission</h3>
+                    <p>We are dedicated to transforming the recruitment landscape in Pakistan by leveraging cutting-edge artificial intelligence to connect talented professionals with their ideal career opportunities.</p>
+                    
+                    <h3>What We Do</h3>
+                    <p>Our AI-powered platform analyzes resumes, matches candidates with suitable positions, and streamlines the entire hiring process. We help companies find the right talent faster while helping job seekers discover opportunities that truly match their skills and aspirations.</p>
+                    
+                    <h3>Why Choose Us</h3>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Advanced AI matching algorithms</li>
+                        <li><i class="fas fa-check-circle"></i> Extensive network of Pakistani employers</li>
+                        <li><i class="fas fa-check-circle"></i> Fast and efficient recruitment process</li>
+                        <li><i class="fas fa-check-circle"></i> Personalized job recommendations</li>
+                        <li><i class="fas fa-check-circle"></i> Secure and confidential</li>
+                    </ul>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=800&fit=crop" alt="Team collaboration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-background">
+            <video autoplay muted loop playsinline>
+                <source src="https://cdn.coverr.co/videos/coverr-abstract-blue-digital-background-8223/1080p.mp4" type="video/mp4">
+            </video>
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container cta-content" data-aos="zoom-in">
+            <h2>Ready to Find Your Perfect Match?</h2>
+            <p>Join thousands of companies and job seekers using AI to make better hiring decisions</p>
+            <div class="cta-buttons">
+                <a href="upload.html" class="btn btn-large btn-primary">
+                    <i class="fas fa-rocket"></i> Get Started Now
+                </a>
+                <a href="#contact" class="btn btn-large btn-outline">
+                    <i class="fas fa-phone"></i> Contact Sales
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>AI<span class="highlight">Recruit</span></span>
+                    </div>
+                    <p>Revolutionizing recruitment with artificial intelligence. Making hiring faster, smarter, and fairer.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#jobs">Browse Jobs</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="upload.html">Upload Resume</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Career Advice</a></li>
+                        <li><a href="#">Resume Tips</a></li>
+                        <li><a href="#">Interview Guide</a></li>
+                        <li><a href="#">Salary Insights</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-user"></i> Hafsa Sajjad</li>
+                        <li><i class="fas fa-phone"></i> 03255406818</li>
+                        <li><i class="fas fa-user"></i> Zarmeena Arif</li>
+                        <li><i class="fas fa-phone"></i> 03437774178</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Women University Canal Road</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hafsa Sajjad. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Best Resume Notification -->
+    <div class="best-resume-popup" id="bestResumePopup">
+        <div class="popup-icon">
+            <i class="fas fa-trophy"></i>
+        </div>
+        <div class="popup-content">
+            <h4>Best Resume Found!</h4>
+            <p><strong>Zarmeena Arif</strong></p>
+            <p class="popup-message">Congratulations on your exceptional resume!</p>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jobs-data.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Best Resume Popup Script -->
+    <script>
+        window.addEventListener('load', function() {
+            // Best Resume Popup
+            setTimeout(function() {
+                const popup = document.getElementById('bestResumePopup');
+                popup.classList.add('show');
+                
+                setTimeout(function() {
+                    popup.classList.remove('show');
+                }, 3000);
+            }, 1000);
+            
+            // Floating Images Rotation
+            const floatingImages = document.querySelectorAll('.floating-image');
+            let currentImageIndex = 0;
+            
+            function rotateImages() {
+                floatingImages[currentImageIndex].classList.remove('active');
+                currentImageIndex = (currentImageIndex + 1) % floatingImages.length;
+                floatingImages[currentImageIndex].classList.add('active');
+            }
+            
+            // Start rotation after 5 seconds
+            setInterval(rotateImages, 5000);
+        });
+    </script>
+</body>
+</html>

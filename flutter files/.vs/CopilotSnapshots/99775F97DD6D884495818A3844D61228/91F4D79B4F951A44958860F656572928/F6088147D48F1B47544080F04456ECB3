@@ -1,0 +1,313 @@
+﻿import 'dart:async';
+import 'dart:io';
+
+import 'dart:convert';
+
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:flutter/services.dart';
+import 'package:path/path.dart' as path;
+import 'package:webview_flutter/webview_flutter.dart';
+
+import 'prediction_service.dart';
+import 'screens/jobs_screen.dart';
+
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(const AIRecruitApp());
+}
+
+class AIRecruitApp extends StatelessWidget {
+  const AIRecruitApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'AIRecruit',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF6366F1)),
+        useMaterial3: true,
+      ),
+      home: const HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _PageItem {
+  final String title;
+  final String? assetPath;
+  final bool isNative;
+
+  const _PageItem({required this.title, this.assetPath, this.isNative = false});
+}
+
+class _HomePageState extends State<HomePage> {
+  late final WebViewController _controller;
+  final List<_PageItem> _pages = const [
+    _PageItem(title: 'Home', assetPath: 'assets/www/index.html'),
+    _PageItem(title: 'Upload', assetPath: 'assets/www/upload.html'),
+    _PageItem(title: 'Jobs', isNative: true),
+  ];
+  int _selectedPageIndex = 0;
+  bool _isLoading = true;
+  bool _serverCheckInProgress = true;
+  String _serverStatus = 'Checking backend availability...';
+  String? _errorMessage;
+  Directory? _tempDirectory;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = WebViewController()
+      ..setJavaScriptMode(JavaScriptMode.unrestricted)
+      ..setBackgroundColor(const Color(0x00000000))
+      ..setNavigationDelegate(
+        NavigationDelegate(
+          onProgress: (int progress) {
+            // Update loading bar.
+          },
+          onPageStarted: (String url) {
+            setState(() {
+              _isLoading = true;
+            });
+          },
+          onPageFinished: (String url) {
+            setState(() {
+              _isLoading = false;
+            });
+          },
+          onWebResourceError: (WebResourceError error) {
+            setState(() {
+              _errorMessage = error.description;
+            });
+          },
+        ),
+      );
+    _initializeWebView();
+    _wakeUpServer();
+  }
+
+  Future<void> _wakeUpServer() async {
+    if (!mounted) return;
+
+    setState(() {
+      _serverCheckInProgress = true;
+      _serverStatus = 'Pinging backend service...';
+    });
+
+    try {
+      final awake = await PredictionService.isAlive();
+      if (!mounted) return;
+
+      setState(() {
+        _serverStatus = awake
+            ? 'Backend is awake and ready.'
+            : 'Backend did not respond. Check your Hugging Face Space URL.';
+      });
+    } catch (error) {
+      if (!mounted) return;
+
+      setState(() {
+        _serverStatus = 'Backend check failed: ${error.toString()}';
+      });
+    } finally {
+      if (!mounted) return;
+      setState(() {
+        _serverCheckInProgress = false;
+      });
+    }
+  }
+
+  Future<void> _initializeWebView() async {
+    if (!mounted) return;
+
+    debugPrint('Initializing WebView...');
+    setState(() {
+      _isLoading = true;
+      _errorMessage = null;
+    });
+
+    try {
+      await _setupLocalAssets();
+      _loadCurrentPage();
+    } catch (error, stack) {
+      debugPrint('WebView initialization failed: $error');
+      debugPrint('$stack');
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+          _errorMessage = error.toString();
+        });
+      }
+    }
+  }
+
+  Future<void> _setupLocalAssets() async {
+    _tempDirectory ??= await Directory.systemTemp.createTemp('ai_resume_www_');
+
+    final assetFiles = <String>[
+      'assets/www/index.html',
+      'assets/www/upload.html',
+      'assets/www/css/styles.css',
+      'assets/www/css/upload.css',
+      'assets/www/js/main.js',
+      'assets/www/js/jobs.js',
+      'assets/www/js/jobs-data.js',
+      'assets/www/js/upload.js',
+      'assets/www/audio/denielcz-immersivecontrol-button-click-sound-463065.mp3',
+      'assets/www/audio/dragon-studio-pop-402324.mp3',
+      'assets/www/audio/kauasilbershlachparodes-shutter-click-2-494026.mp3',
+      'assets/www/audio/matthewvakaliuk73627-mouse-click-290204.mp3',
+      'assets/www/audio/tatamusic-inspiring-inspirational-music-398940.mp3',
+    ];
+
+    for (final assetPath in assetFiles) {
+      final data = await rootBundle.load(assetPath);
+      final bytes = data.buffer.asUint8List();
+      final relativePath = assetPath.replaceFirst('assets/www/', '');
+      final outputFile = File(path.join(_tempDirectory!.path, relativePath));
+      await outputFile.parent.create(recursive: true);
+      await outputFile.writeAsBytes(bytes, flush: true);
+    }
+  }
+
+  void _loadCurrentPage() {
+    final currentPage = _pages[_selectedPageIndex];
+    if (currentPage.isNative) {
+      setState(() {
+        _isLoading = false;
+      });
+      return;
+    }
+
+    if (_tempDirectory == null) return;
+    final relativePath = currentPage.assetPath!.replaceFirst('assets/www/', '');
+    final filePath = path.join(_tempDirectory!.path, relativePath);
+    final fileUri = Uri.file(filePath).toString();
+    debugPrint('Loading WebView file: $fileUri');
+    _controller.loadFile(filePath);
+  }
+
+  void _loadPage(int index) {
+    if (_selectedPageIndex == index) return;
+    setState(() {
+      _selectedPageIndex = index;
+      _isLoading = true;
+    });
+    _loadCurrentPage();
+  }
+
+  @override
+  void dispose() {
+    _tempDirectory?.delete(recursive: true);
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('AIRecruit'),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.refresh),
+            tooltip: 'Reload page',
+            onPressed: () {
+              setState(() {
+                _isLoading = true;
+              });
+              _controller.reload();
+            },
+          ),
+          PopupMenuButton<int>(
+            icon: const Icon(Icons.menu),
+            onSelected: _loadPage,
+            itemBuilder: (context) => _pages
+                .asMap()
+                .entries
+                .map(
+                  (entry) => PopupMenuItem<int>(
+                    value: entry.key,
+                    child: Text(entry.value.title),
+                  ),
+                )
+                .toList(),
+          ),
+        ],
+      ),
+      body: _errorMessage != null
+          ? Center(
+              child: Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(Icons.error_outline, size: 72, color: Colors.redAccent),
+                    const SizedBox(height: 16),
+                    const Text(
+                      'Unable to load the app',
+                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 12),
+                    Text(
+                      _errorMessage!,
+                      style: const TextStyle(fontSize: 16),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 24),
+                    ElevatedButton(
+                      onPressed: () {
+                        setState(() {
+                          _isLoading = true;
+                          _errorMessage = null;
+                        });
+                        _initializeWebView();
+                      },
+                      child: const Text('Retry'),
+                    ),
+                  ],
+                ),
+              ),
+            )
+          : Column(
+              children: [
+                if (_serverStatus.isNotEmpty)
+                  Container(
+                    width: double.infinity,
+                    color: _serverCheckInProgress ? Colors.yellow[100] : Colors.blue[50],
+                    padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    child: Text(
+                      _serverStatus,
+                      style: TextStyle(
+                        color: _serverCheckInProgress ? Colors.black87 : Colors.black,
+                      ),
+                    ),
+                  ),
+                if (_isLoading) const LinearProgressIndicator(minHeight: 4),
+                Expanded(
+                  child: _pages[_selectedPageIndex].isNative
+                      ? const JobsScreen()
+                      : WebViewWidget(controller: _controller),
+                ),
+              ],
+            ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedPageIndex,
+        onTap: _loadPage,
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.upload_file), label: 'Upload'),
+        ],
+      ),
+    );
+  }
+}
